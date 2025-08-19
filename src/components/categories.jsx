@@ -11,8 +11,8 @@ const categories = [
   
   export default function CategoryGrid() {
     return (
-      <section className="py-6">
-        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-6 text-center">
+      <section className="py-6 px-4">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-8 gap-4 sm:gap-6 text-center">
           {categories.map((cat) => (
             <div
               key={cat.name}
@@ -21,7 +21,7 @@ const categories = [
               <img
                 src={cat.img}
                 alt={cat.name}
-                className="w-28 h-28 object-cover rounded-md shadow"
+                className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-cover rounded-md shadow"
               />
               <span className="mt-2 text-sm font-medium">{cat.name}</span>
             </div>

@@ -17,17 +17,19 @@ const categories = [
 export default function Navbar() {
   return (
     <nav className="bg-red-600">
-      <ul className="flex justify-center gap-8 text-white font-medium py-3">
-        {categories.map((category) => (
-          <li
-            key={category}
-            className="flex items-center gap-1 cursor-pointer hover:text-gray-200"
-          >
-            {category}
-            <ChevronDown size={14} />
-          </li>
-        ))}
-      </ul>
+      <div className="overflow-x-auto">
+        <ul className="flex whitespace-nowrap justify-start md:justify-center gap-4 md:gap-8 text-white font-medium py-3 px-4">
+          {categories.map((category) => (
+            <li
+              key={category}
+              className="shrink-0 flex items-center gap-1 cursor-pointer hover:text-gray-200 text-sm md:text-base"
+            >
+              {category}
+              <ChevronDown size={14} />
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   );
 }
