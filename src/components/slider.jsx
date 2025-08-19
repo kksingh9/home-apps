@@ -38,7 +38,7 @@ export default function HeroSlider() {
         {slides.map((slide, index) => (
           <div
             key={slide.title}
-            className="h-[400px] flex items-center justify-center text-center text-white"
+            className="h-[200px] flex items-center justify-center text-center text-white"
             style={{
               backgroundImage: `url(${slide.bg})`,
               backgroundSize: "cover",
