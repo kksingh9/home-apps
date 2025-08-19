@@ -33,19 +33,19 @@ export default function HeroSlider() {
   };
 
   return (
-    <div className="w-full px-2 sm:px-4">
+    <div className="w-full  sm:px-4">
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <div
             key={slide.title}
-            className="h-56 md:h-[28rem] flex items-center justify-center text-center text-white"
+            className="h-56 md:h-[15rem] flex items-center justify-center text-center text-white"
             style={{
               backgroundImage: `url(${slide.bg})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
           >
-            <div className="bg-black/40 p-4 md:p-6 rounded-lg">
+            <div className="bg-black/40 p-4 md:p-6 ">
               <h2 className="text-3xl md:text-5xl font-bold">{slide.title}</h2>
               <p className="text-lg md:text-2xl mt-2 italic">{slide.subtitle}</p>
               <button className="mt-4 bg-pink-500 text-white px-6 py-2 rounded-lg hover:bg-pink-600">
