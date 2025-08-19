@@ -16,7 +16,7 @@ const categories = [
 
 export default function Navbar() {
   return (
-    <nav className="bg-red-600">
+    <nav className="bg-red-600 dark:bg-black">
       <div className="overflow-x-auto">
         <ul className="flex whitespace-nowrap justify-start md:justify-center gap-4 md:gap-8 text-white font-medium py-3 px-4">
           {categories.map((category) => (

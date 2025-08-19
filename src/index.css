@@ -3,3 +3,13 @@
 
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
+
+/* Dark mode base colors */
+:root {
+  color-scheme: light dark;
+}
+
+html.dark body {
+  background-color: #000;
+  color: #fff;
+}

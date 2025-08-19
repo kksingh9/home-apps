@@ -23,7 +23,7 @@ const categories = [
                 alt={cat.name}
                 className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 object-cover rounded-md shadow"
               />
-              <span className="mt-2 text-sm font-medium">{cat.name}</span>
+              <span className="mt-2 text-sm font-medium text-gray-900 dark:text-gray-100">{cat.name}</span>
             </div>
           ))}
         </div>
